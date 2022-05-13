@@ -22,7 +22,7 @@ which will generate gem file
 ## Step 3 : 
 ###### installation to logstash
 ```
-${logstash_path}/bin/logstash-plugin install --no-verify --local ${logstash_custom_plugin_path}/logstash-output-couchbase-1.0.1.gem
+${logstash_path}/bin/logstash-plugin install --no-verify --local ${logstash_custom_plugin_path}/logstash-output-jdbc-1.0.1.gem
 ```
 
 
