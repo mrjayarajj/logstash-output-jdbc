@@ -31,8 +31,6 @@ ${logstash_path}/bin/logstash-plugin install --no-verify --local ${logstash_cust
 outupt { 
          jdbc {
 				jdbc_connection_string => "${mysql_jdbc_connection_string}"
-				jdbc_validate_connection => true
-				jdbc_validation_timeout => 120
 				jdbc_user => "${mysql_jdbc_user}"
 				jdbc_password => "${mysql_jdbc_password}"
 				jdbc_driver_class => "com.mysql.jdbc.Driver"
@@ -41,7 +39,7 @@ outupt {
 						"/app/app_module/sql/any_dml.sql"
 				]
 				pool_max => 1
-				id => "sdc_n_add"
+				id => "uniquie_name_helps_in_log"
 			}
 }
 ```
