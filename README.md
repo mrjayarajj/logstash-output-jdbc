@@ -1,9 +1,29 @@
 Jdbc input plugin 
 
 
+<<<<<<< HEAD
 Integration version: v1.0.1
 Released on: 2021-09-20
 Changelog
+=======
+## Example : 
+```
+outupt { 
+         jdbc {
+				jdbc_connection_string => "${mysql_jdbc_connection_string}"
+				jdbc_user => "${mysql_jdbc_user}"
+				jdbc_password => "${mysql_jdbc_password}"
+				jdbc_driver_class => "com.mysql.jdbc.Driver"
+				statement_filepath => [
+						"${logstash_project_path}",
+						"/app/app_module/sql/any_dml.sql"
+				]
+				pool_max => 1
+				id => "uniquie_name_helps_in_log"
+			}
+}
+```
+>>>>>>> e15384c66f8038712d31ff3d2e05355a355e8a9a
 
 
 For other versions, see the Versioned plugin docs.
